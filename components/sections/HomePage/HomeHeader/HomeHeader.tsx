@@ -58,8 +58,9 @@ export const HomeHeader = () => {
             alignItems={"center"}
             sx={{
               bgcolor: "#EBE8EF",
-
-              width: "512px",
+              borderRadius: 2,
+              boxShadow: "0px 2px 4px #0000000F",
+              width: "400px",
               height: "695px",
               mr: 8,
             }}
