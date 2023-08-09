@@ -10,7 +10,7 @@ export const HomeHeader = () => {
           src="/images/fitalLogo.png"
           width={"165px"}
           height={"42px"}
-          sx={{ mt: 5, ml: 8 }}
+          sx={{ mt: 5, ml: 10 }}
         />
       </Box>
       <Box
