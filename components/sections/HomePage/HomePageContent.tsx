@@ -7,6 +7,7 @@ import { HomeSimpleText } from "./HomeSimpleText";
 import { FeaturesSection } from "../CommonSections";
 import { HomePoints } from "./HomePoints";
 import { HomeHistoricalFacts } from "./HomeHistoricalFacts";
+import { HomeTeam } from "./HomeTeam";
 
 export const HomePageContent = () => {
   return (
@@ -22,6 +23,8 @@ export const HomePageContent = () => {
       <HomeSimpleText />
       <MainDivider />
       <FeaturesSection />
+      <MainDivider />
+      <HomeTeam />
     </Box>
   );
 };

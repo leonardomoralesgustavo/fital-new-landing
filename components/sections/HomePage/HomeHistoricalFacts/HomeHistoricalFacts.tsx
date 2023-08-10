@@ -11,8 +11,6 @@ export const HomeHistoricalFacts = () => {
           justifyContent={"left"}
           alignItems={"left"}
           width={"65%"}
-          // textAlign={"center"}
-          //   mb={10}
         >
           <Typography
             sx={{
