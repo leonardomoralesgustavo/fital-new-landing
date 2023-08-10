@@ -5,6 +5,7 @@ import { MainDivider } from "@/components/UI/dividers";
 import { HomeReguladoras } from "./HomeReguladoras";
 import { HomeSimpleText } from "./HomeSimpleText";
 import { FeaturesSection } from "../CommonSections";
+import { HomePoints } from "./HomePoints";
 
 export const HomePageContent = () => {
   return (
@@ -12,6 +13,8 @@ export const HomePageContent = () => {
       <HomeHeader />
       <MainDivider />
       <HomeReguladoras />
+      <MainDivider />
+      <HomePoints />
       <MainDivider />
       <HomeSimpleText />
       <MainDivider />
