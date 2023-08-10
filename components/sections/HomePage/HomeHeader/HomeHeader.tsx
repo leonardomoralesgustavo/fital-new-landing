@@ -78,6 +78,7 @@ export const HomeHeader = () => {
                 xl: "36px",
               },
               mt: 5,
+              fontWeight: "500",
             }}
           >
             ¡No te quedes atrás, CREA TU IMPERIO ! 100% en línea

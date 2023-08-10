@@ -11,7 +11,7 @@ export const HomePageContent = () => {
     <Box>
       <HomeHeader />
       <MainDivider />
-      {/* <HomeReguladoras /> */}
+      <HomeReguladoras />
       <MainDivider />
       <HomeSimpleText />
       <MainDivider />

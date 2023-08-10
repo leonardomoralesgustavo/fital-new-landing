@@ -10,5 +10,5 @@ const styles: SxProps<Theme> = (theme) => ({
   // borderColor: theme.palette.primary.main,
   width: "85%",
   mx: "auto",
-  my: { md: 10, xs: 8 },
+  my: { md: 10, sm: 8, xs: 5 },
 });
