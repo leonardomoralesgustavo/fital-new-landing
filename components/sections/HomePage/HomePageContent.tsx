@@ -6,6 +6,7 @@ import { HomeReguladoras } from "./HomeReguladoras";
 import { HomeSimpleText } from "./HomeSimpleText";
 import { FeaturesSection } from "../CommonSections";
 import { HomePoints } from "./HomePoints";
+import { HomeHistoricalFacts } from "./HomeHistoricalFacts";
 
 export const HomePageContent = () => {
   return (
@@ -15,6 +16,8 @@ export const HomePageContent = () => {
       <HomeReguladoras />
       <MainDivider />
       <HomePoints />
+      <MainDivider />
+      <HomeHistoricalFacts />
       <MainDivider />
       <HomeSimpleText />
       <MainDivider />
