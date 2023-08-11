@@ -14,11 +14,11 @@ export const HomePageContent = () => {
     <Box>
       <HomeHeader />
       <MainDivider />
-      <HomeReguladoras />
+      {/* <HomeReguladoras /> */}
       <MainDivider />
       <HomePoints />
       <MainDivider />
-      {/* <HomeHistoricalFacts /> */}
+      <HomeHistoricalFacts />
       <MainDivider />
       <HomeSimpleText />
       <MainDivider />

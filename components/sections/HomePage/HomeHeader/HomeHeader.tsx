@@ -56,7 +56,7 @@ export const HomeHeader = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            ml: { xs: 0, sm: 3, md: 8, lg: 10, xl: 11 },
+            ml: { xs: 0, sm: 0, md: 8, lg: 10, xl: 11 },
           }}
         >
           <Typography
@@ -128,38 +128,45 @@ export const HomeHeader = () => {
             display={"flex"}
             flexDirection="column"
             justifyContent="center"
-            alignItems={"center"}
+            // alignItems={"center"}
             sx={{
               bgcolor: "#EBE8EF",
               borderRadius: 5,
               boxShadow: "0px 2px 4px #0000000F",
-              // width: "400px",
+              // width: {xs: "325px", sm: "100%", md:"400px"} ,
               mt: { xs: 4, sm: "none" },
-              px: { xs: 5, sm: 20, md: 8 },
+              // px: 2,
+              px: { xs: 6, sm: 20, md: 8 },
               py: { xs: -4, sm: 5, md: 2, lg: 3, xl: 3 },
-              height: { xs: "500px", md: "600px", lg: "650px", xl: "695px" },
+              // height: { xs: "550px", md: "600px", lg: "650px", xl: "695px" },
               mr: { xs: 0, sm: 0, md: 2 },
-              gap: 8,
+              gap: { xs: 0, sm: 0, md: 4 },
             }}
           >
-            <Typography sx={{ fontSize: "25px" }}>
-              Agendar asesoría gratuita
-            </Typography>
+            <Box display={"flex"} justifyContent={"center"}>
+              <Typography sx={{ fontSize: "25px" }}>
+                Agendar asesoría gratuita
+              </Typography>
+            </Box>
             <Box
-              width={"100%"}
+              // width={"100%"}
               onSubmit={handleSubmit}
               component="form"
               sx={{ display: "flex", flexDirection: "column" }}
             >
-              <Typography>Nombre</Typography>
+              <Typography textAlign={"left"}>Nombre</Typography>
               <TextField name="name" type="text" sx={{ mt: 1 }} />
-              <Typography>Apellido</Typography>
+              <Typography textAlign={"left"}>Apellido</Typography>
               <TextField name="lastName" type="text" sx={{ mt: 1 }} />
-              <Typography sx={{ mb: 0, mt: 2 }}>Correo</Typography>
+              <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
+                Correo
+              </Typography>
               <TextField name="email" type="text" sx={{ mt: 1 }} />
-              <Typography sx={{ mb: 0, mt: 2 }}>Teléfono</Typography>
+              <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
+                Teléfono
+              </Typography>
               <TextField name="phone" type="text" sx={{ mt: 1 }} />
-              <Box display={"flex"} justifyContent={"left"} mt={4}>
+              <Box display={"flex"} justifyContent={"center"} mt={4}>
                 <Button
                   type="submit"
                   sx={{

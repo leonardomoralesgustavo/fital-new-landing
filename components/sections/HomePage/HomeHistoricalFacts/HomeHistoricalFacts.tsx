@@ -15,13 +15,14 @@ export const HomeHistoricalFacts = () => {
           <Typography
             sx={{
               fontSize: {
-                xs: "30px",
-                sm: "35px",
+                xs: "11px",
+                sm: "20px",
                 md: "40px",
                 lg: "45px",
                 xl: "48px",
               },
               fontWeight: "medium",
+              textAlign: { xs: "center", sm: "center", md: "left" },
             }}
           >
             El{" "}
@@ -29,7 +30,7 @@ export const HomeHistoricalFacts = () => {
               component="span"
               variant="inherit"
               color={"#7624FF"}
-              fontSize={"64px"}
+              fontSize={{ xs: "16px", sm: "20px", md: "40", lg: "64px" }}
               sx={{ fontWeight: "medium" }}
             >
               SECRETO{" "}
@@ -43,19 +44,20 @@ export const HomeHistoricalFacts = () => {
           flexDirection={"column"}
           justifyContent={"left"}
           alignItems={"left"}
-          width={"65%"}
+          width={{ xs: "95%", sm: "90%", md: "65%" }}
           mb={10}
         >
           <Typography
             sx={{
               fontSize: {
-                xs: "30px",
-                sm: "35px",
+                xs: "11px",
+                sm: "20px",
                 md: "40px",
                 lg: "45px",
                 xl: "48px",
               },
               fontWeight: "medium",
+              textAlign: { xs: "center", sm: "center", md: "left" },
             }}
           >
             DE LOS{" "}
@@ -63,7 +65,7 @@ export const HomeHistoricalFacts = () => {
               component="span"
               variant="inherit"
               color={"#7624FF"}
-              fontSize={"100px"}
+              fontSize={{ xs: "16px", sm: "20px", md: "40", lg: "64px" }}
               sx={{ fontWeight: "medium" }}
             >
               GRANDES PATRIMONIOS
@@ -74,34 +76,34 @@ export const HomeHistoricalFacts = () => {
 
       <Box
         display={"flex"}
-        flexDirection={{ xs: "column-reverse", sm: "column", md: "row" }}
+        flexDirection={{ xs: "column", sm: "column", md: "row" }}
         justifyContent={"center"}
         alignItems={"center"}
+        px={{ xs: 2, sm: 2, md: "none" }}
         gap={{ xs: 5, sm: 5, md: 30 }}
       >
         <Box
           component={"img"}
           src="/images/personaje.png"
-          width={"639px"}
-          height={"782px"}
+          width={{ xs: "270px", sm: "290px", md: "639px" }}
+          height={{ xs: "334px", sm: "350px", md: "760px" }}
         />
         <Box
           display={"flex"}
           flexDirection={"column"}
           gap={{ xs: 5, sm: 5, md: 2 }}
           sx={{
-            width: "700px",
-            height: "560px",
+            width: { xs: "auto", sm: "290px", md: "700px" },
+            height: { xs: "auto", sm: "290px", md: "560px" },
             justifyContent: "center",
             alignItems: "left",
-            bgcolor: "",
           }}
         >
           <Typography
             sx={{
               fontSize: {
-                xs: "22px",
-                sm: "25px",
+                xs: "16px",
+                sm: "20px",
                 md: "30px",
                 lg: "36px",
                 xl: "36px",
@@ -136,7 +138,7 @@ export const HomeHistoricalFacts = () => {
           <Box
             display={"flex"}
             justifyContent={{ xs: "center", sm: "center", md: "left" }}
-            mt={4}
+            mt={{ xs: 0, sm: 1, md: 4 }}
           >
             <Button
               sx={{
