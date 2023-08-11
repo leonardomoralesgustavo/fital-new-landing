@@ -18,7 +18,7 @@ export const HomeTeam = () => {
         flexDirection={"column"}
         // bgcolor={"gray"}
       >
-        <Box component={"img"} src="/images/zai-circle.png" sx={{mb: 8}} />
+        <Box component={"img"} src="/images/zai-circle.png" sx={{ mb: 8 }} />
         <Typography sx={{ fontSize: "30px", fontWeight: "medium", mb: 4 }}>
           Hola soy Zaira Mora
         </Typography>
@@ -36,7 +36,7 @@ export const HomeTeam = () => {
         flexDirection={"column"}
         // bgcolor={"gray"}
       >
-        <Box component={"img"} src="/images/jorge-circle.png" sx={{mb: 8}}/>
+        <Box component={"img"} src="/images/jorge-circle.png" sx={{ mb: 8 }} />
         <Typography sx={{ fontSize: "30px", fontWeight: "medium", mb: 4 }}>
           Hola soy Jorge Puflea
         </Typography>
