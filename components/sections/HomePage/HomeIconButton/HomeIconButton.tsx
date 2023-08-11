@@ -7,8 +7,6 @@ export const HomeIconButton = () => {
       display={"flex"}
       justifyContent={"right"}
       alignItems={"center"}
-      //   position={"fixed"}
-      // textAlign={"center"}
       mb={10}
     >
       <Box
@@ -18,7 +16,7 @@ export const HomeIconButton = () => {
           position: "fixed",
           right: 0,
           bottom: { xs: 0, sm: 60, md: 80 },
-          width: { xs: "70px", sm: "90px", md: "110px" },
+          width: { xs: "70px", sm: "80px", md: "80px" },
         }}
       />
       <Button
@@ -31,8 +29,8 @@ export const HomeIconButton = () => {
           py: { xs: 2, sm: 2, md: 2 },
           px: { xs: 2, sm: 2, md: 2 },
           borderRadius: 8,
-          fontSize: { xs: "15px", md: "20px", lg: "25px", xl: "28px" },
-          display: { xs: "none", sm: "block" }, // Disappear on xs screen size
+          fontSize: { xs: "15px", md: "20px", lg: "20px", xl: "20px" },
+          display: { xs: "none", sm: "block" },
         }}
       >
         Agendar asesoria gratuita

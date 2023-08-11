@@ -16,10 +16,10 @@ export const HomeInfo = () => {
         alignItems={"center"}
         textAlign={"center"}
         sx={{
-          opacity: 2,
+          opacity: 0.8,
           background:
-            "transparent linear-gradient(90deg, #FFFFFF00 0%, #F5A1FC 100%, #FFFFFF00 100%) 0% 0% no-repeat padding-box",
-          p: 2,
+            "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(245, 161, 252, 0.8) 100%) 0% 0% no-repeat padding-box",
+          p: 9,
         }}
       >
         <Typography
@@ -27,8 +27,9 @@ export const HomeInfo = () => {
         >
           Con el Testamento Digital, tienes el poder de asegurar el bienestar de
           tus seres queridos y la multiplicación de tus bienes. Con FITAL ahora
-          es posible.
+          es posible.{" "}
           <Typography
+            component={"span"}
             sx={{
               fontSize: "24px",
               maxWidth: "100%",
