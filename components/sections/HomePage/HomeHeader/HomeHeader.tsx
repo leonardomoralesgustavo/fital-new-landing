@@ -1,5 +1,5 @@
 import { addContactService } from "@/interfaces";
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 
 export const HomeHeader = () => {
@@ -50,6 +50,43 @@ export const HomeHeader = () => {
           gap: { xl: 0, lg: 4, md: 4, sm: 3, xs: 1 },
         }}
       >
+        {/* <Grid
+          sx={{
+            // clipPath: "polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)",
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            // width: { xs: "auto", md: "100vw" },
+            // height: "73%",
+            width: { xs: "100vw", md: "none" },
+            height: { xs: "73%", sm: "400px", md: "73%" },
+            position: "absolute",
+            buttom: 0,
+            // top: 0,
+            // top: "50%",
+            left: "30%",
+            // middle: 0,
+            // bgcolor: "blue",
+            backgroundImage: "url('/images/zai-foto.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "30%",
+          }}
+        ></Grid> */}
+        <Grid
+          sx={{
+            // bgcolor: "blue",
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            width: { xs: "100vw", md: "none" },
+            height: { xs: "73%", sm: 0, md: 0, lg: "73%" }, // Set 'sm' height to 0 to make it disappear
+            position: "absolute",
+            bottom: "15%", // Corrected spelling to 'bottom' instead of 'buttom'
+            left: "5%",
+            backgroundImage: "url('/images/zai-foto.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "40%",
+            backgroundPosition: "center bottom", // Keep the image centered at the bottom
+            display: "block", // To ensure the Grid is displayed as a block element
+          }}
+        ></Grid>
+
         <Box
           bgcolor={""}
           maxWidth={{ xs: "none", sm: "none", md: "40%" }}
