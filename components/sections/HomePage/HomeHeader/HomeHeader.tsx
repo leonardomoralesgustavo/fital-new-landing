@@ -73,15 +73,15 @@ export const HomeHeader = () => {
         <Grid
           sx={{
             // bgcolor: "blue",
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-            width: { xs: "100vw", md: "none" },
+            clipPath: "polygon(30% 0, 70% 0, 70% 100%, 30% 100%)",
+            width: { xs: "85vw", md: "none" },
             height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" }, // Set 'sm' height to 0 to make it disappear
             position: "absolute",
             bottom: "15.5%", // Corrected spelling to 'bottom' instead of 'buttom'
-            left: "5%",
+            left: "13%",
             backgroundImage: "url('/images/zai-foto.png')",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "40%",
+            backgroundSize: "50%",
             backgroundPosition: "center bottom", // Keep the image centered at the bottom
             display: "block", // To ensure the Grid is displayed as a block element
           }}
