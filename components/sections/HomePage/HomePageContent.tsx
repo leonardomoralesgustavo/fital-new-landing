@@ -8,6 +8,7 @@ import { FeaturesSection } from "../CommonSections";
 import { HomePoints } from "./HomePoints";
 import { HomeHistoricalFacts } from "./HomeHistoricalFacts";
 import { HomeTeam } from "./HomeTeam";
+import { HomeInfo } from "./HomeInfo";
 
 export const HomePageContent = () => {
   return (
@@ -21,6 +22,8 @@ export const HomePageContent = () => {
       <HomeHistoricalFacts />
       <MainDivider />
       <HomeSimpleText />
+      <MainDivider />
+      <HomeInfo />
       <MainDivider />
       <FeaturesSection />
       <MainDivider />
