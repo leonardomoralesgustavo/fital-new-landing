@@ -27,7 +27,7 @@ export const HomePoints = () => {
         }}
       >
         <Box display={"flex"} flexDirection={"row"}>
-          <Box sx={{ mt: 1.5, mr: 1.5 }}>
+          <Box sx={{ mt: { xs: 0, sm: 0, md: 1.5 }, mr: 1.5 }}>
             <Box component={"img"} src="/icons/icon-check.png" />
           </Box>
           <Typography sx={{ fontSize: "36px" }}>
@@ -36,7 +36,7 @@ export const HomePoints = () => {
         </Box>
 
         <Box display={"flex"} flexDirection={"row"}>
-          <Box sx={{ mt: 1.5, mr: 1.5 }}>
+          <Box sx={{ mt: { xs: 0, sm: 0, md: 1.5 }, mr: 1.5 }}>
             <Box component={"img"} src="/icons/icon-check.png" />
           </Box>
           <Typography sx={{ fontSize: "36px" }}>
@@ -45,7 +45,7 @@ export const HomePoints = () => {
         </Box>
 
         <Box display={"flex"} flexDirection={"row"}>
-          <Box sx={{ mt: 1.5, mr: 1.5 }}>
+          <Box sx={{ mt: { xs: 0, sm: 0, md: 1.5 }, mr: 1.5 }}>
             <Box component={"img"} src="/icons/icon-check.png" />
           </Box>
           <Typography sx={{ fontSize: "36px" }}>
@@ -53,7 +53,7 @@ export const HomePoints = () => {
           </Typography>
         </Box>
         <Box display={"flex"} flexDirection={"row"}>
-          <Box sx={{ mt: 1.5, mr: 1.5 }}>
+          <Box sx={{ mt: { xs: 0, sm: 0, md: 1.5 }, mr: 1.5 }}>
             <Box component={"img"} src="/icons/icon-check.png" />
           </Box>
           <Typography sx={{ fontSize: "36px" }}>
@@ -61,7 +61,7 @@ export const HomePoints = () => {
           </Typography>
         </Box>
         <Box display={"flex"} flexDirection={"row"}>
-          <Box sx={{ mt: 1.5, mr: 1.5 }}>
+          <Box sx={{ mt: { xs: 0, sm: 0, md: 1.5 }, mr: 1.5 }}>
             <Box component={"img"} src="/icons/icon-check.png" />
           </Box>
           <Typography sx={{ fontSize: "36px" }}>
