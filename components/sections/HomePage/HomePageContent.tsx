@@ -18,7 +18,7 @@ export const HomePageContent = () => {
       <MainDivider />
       <HomePoints />
       <MainDivider />
-      <HomeHistoricalFacts />
+      {/* <HomeHistoricalFacts /> */}
       <MainDivider />
       <HomeSimpleText />
       <MainDivider />

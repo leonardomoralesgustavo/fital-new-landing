@@ -5,7 +5,7 @@ export const HomePoints = () => {
   return (
     <Box
       display={"flex"}
-      flexDirection={{ xs: "column-reverse", sm: "column-reverse", md: "row" }}
+      flexDirection={{ xs: "column", sm: "column", md: "row" }}
       justifyContent={"center"}
       alignItems={"center"}
       gap={{ xs: 5, sm: 5, md: 0 }}
@@ -13,14 +13,18 @@ export const HomePoints = () => {
       <Box
         component={"img"}
         src="/images/GIF-LANDING.gif"
-        width={"750px"}
-        height={"510px"}
+        width={{ xs: "300px", sm: "400px", md: "500px", lg: "750px" }}
+        height={{ xs: "auto", sm: "auto" }}
       />
       <Box
         display={"flex"}
         flexDirection={"column"}
         gap={{ xs: 5, sm: 5, md: 2 }}
-        sx={{ width: "700px", height: "560px", justifyContent: "center" }}
+        sx={{
+          width: { xs: "300px", sm: "400px", md: "700px" },
+          height: { xs: "auto", sm: "auto", md: "560px" },
+          justifyContent: "center",
+        }}
       >
         <Box display={"flex"} flexDirection={"row"}>
           <Box sx={{ mt: 1.5, mr: 1.5 }}>
