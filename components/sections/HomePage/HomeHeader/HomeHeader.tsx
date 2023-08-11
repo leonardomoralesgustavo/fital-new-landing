@@ -1,7 +1,27 @@
+import { addContactService } from "@/interfaces";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import React from "react";
 
 export const HomeHeader = () => {
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+
+    const data = await addContactService({
+      name: event.target.name.value,
+      last_name: event.target.lastName.value,
+      phone: event.target.phone.value,
+      email: event.target.email.value,
+    });
+    console.log(data);
+    if (!data.success) {
+      // setMsg({ text: data.errors![0], type: "error" });
+      console.log("Algo anda mal");
+    } else {
+      console.log("Enviado");
+      // onClose();
+      // window.open("https://fitalmx.com/thank_you", "_self");
+    }
+  };
   return (
     <>
       <Box
@@ -119,32 +139,46 @@ export const HomeHeader = () => {
               py: { xs: -4, sm: 5, md: 2, lg: 3, xl: 3 },
               height: { xs: "500px", md: "600px", lg: "650px", xl: "695px" },
               mr: { xs: 0, sm: 0, md: 2 },
+              gap: 8,
             }}
           >
-            <Typography>Crear cuenta</Typography>
+            <Typography sx={{ fontSize: "25px" }}>
+              Agendar asesoría gratuita
+            </Typography>
             <Box
-              component={"form"}
+              width={"100%"}
+              onSubmit={handleSubmit}
+              component="form"
               sx={{ display: "flex", flexDirection: "column" }}
             >
-              <label className="">Nombre</label>
-
-              <label className="text-aggentia-blue">Correo</label>
-
-              <label className="text-aggentia-blue">Teléfono</label>
-            </Box>
-            <Box display={"flex"} justifyContent={"left"} mt={4}>
-              <Button
-                sx={{
-                  bgcolor: "#7600FF",
-                  color: "white",
-                  py: { xs: 2, md: 2, lg: 3, xl: 4 },
-                  px: { xs: 2, md: 2, lg: 3, xl: 3 },
-                  borderRadius: 2,
-                  fontSize: { xs: "15px", md: "20px", lg: "25px", xl: "28px" },
-                }}
-              >
-                Agendar asesoria gratuita
-              </Button>
+              <Typography>Nombre</Typography>
+              <TextField name="name" type="text" sx={{ mt: 1 }} />
+              <Typography>Apellido</Typography>
+              <TextField name="lastName" type="text" sx={{ mt: 1 }} />
+              <Typography sx={{ mb: 0, mt: 2 }}>Correo</Typography>
+              <TextField name="email" type="text" sx={{ mt: 1 }} />
+              <Typography sx={{ mb: 0, mt: 2 }}>Teléfono</Typography>
+              <TextField name="phone" type="text" sx={{ mt: 1 }} />
+              <Box display={"flex"} justifyContent={"left"} mt={4}>
+                <Button
+                  type="submit"
+                  sx={{
+                    bgcolor: "#7600FF",
+                    color: "white",
+                    py: { xs: 2, md: 2, lg: 3, xl: 4 },
+                    px: { xs: 2, md: 2, lg: 3, xl: 3 },
+                    borderRadius: 2,
+                    fontSize: {
+                      xs: "15px",
+                      md: "20px",
+                      lg: "25px",
+                      xl: "28px",
+                    },
+                  }}
+                >
+                  Agendar asesoria gratuita
+                </Button>
+              </Box>
             </Box>
           </Box>
         </Box>
