@@ -77,7 +77,7 @@ export const HomeHeader = () => {
             width: { xs: "85vw", md: "none" },
             height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" }, // Set 'sm' height to 0 to make it disappear
             position: "absolute",
-            bottom: "16%", // Corrected spelling to 'bottom' instead of 'buttom'
+            bottom: "15.5%", // Corrected spelling to 'bottom' instead of 'buttom'
             left: "13%",
             backgroundImage: "url('/images/zai-foto.png')",
             backgroundRepeat: "no-repeat",
