@@ -77,7 +77,7 @@ export const HomeHeader = () => {
             width: { xs: "100vw", md: "none" },
             height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" }, // Set 'sm' height to 0 to make it disappear
             position: "absolute",
-            bottom: "15%", // Corrected spelling to 'bottom' instead of 'buttom'
+            bottom: "15.5%", // Corrected spelling to 'bottom' instead of 'buttom'
             left: "5%",
             backgroundImage: "url('/images/zai-foto.png')",
             backgroundRepeat: "no-repeat",
@@ -192,17 +192,17 @@ export const HomeHeader = () => {
               sx={{ display: "flex", flexDirection: "column" }}
             >
               <Typography textAlign={"left"}>Nombre</Typography>
-              <TextField name="name" type="text" sx={{ mt: 1 }} />
+              <TextField name="name" type="text" sx={{ mt: 1, backgroundColor: "white" }} />
               <Typography textAlign={"left"}>Apellido</Typography>
-              <TextField name="lastName" type="text" sx={{ mt: 1 }} />
+              <TextField name="lastName" type="text" sx={{ mt: 1, backgroundColor: "white" }} />
               <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
                 Correo
               </Typography>
-              <TextField name="email" type="text" sx={{ mt: 1 }} />
+              <TextField name="email" type="text" sx={{ mt: 1, backgroundColor: "white" }} />
               <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
                 Teléfono
               </Typography>
-              <TextField name="phone" type="text" sx={{ mt: 1 }} />
+              <TextField name="phone" type="text" sx={{ mt: 1, backgroundColor: "white" }} />
               <Box display={"flex"} justifyContent={"center"} mt={4}>
                 <Button
                   type="submit"

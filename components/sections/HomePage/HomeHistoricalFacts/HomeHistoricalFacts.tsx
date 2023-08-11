@@ -80,13 +80,13 @@ export const HomeHistoricalFacts = () => {
         justifyContent={"center"}
         alignItems={"center"}
         px={{ xs: 2, sm: 2, md: "none" }}
-        gap={{ xs: 5, sm: 5, md: 30 }}
+        gap={{ xs: 5, sm: 5, md: 20 }}
       >
         <Box
           component={"img"}
           src="/images/personaje.png"
-          width={{ xs: "270px", sm: "290px", md: "639px" }}
-          height={{ xs: "334px", sm: "350px", md: "760px" }}
+          width={{ xs: "270px", sm: "290px", md: "600px" }}
+          height={{ xs: "334px", sm: "350px", md: "720px" }}
         />
         <Box
           display={"flex"}
