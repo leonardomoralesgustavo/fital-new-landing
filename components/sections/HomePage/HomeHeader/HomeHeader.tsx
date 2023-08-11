@@ -75,7 +75,7 @@ export const HomeHeader = () => {
             // bgcolor: "blue",
             clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
             width: { xs: "100vw", md: "none" },
-            height: { xs: "73%", sm: 0, md: 0, lg: "73%" }, // Set 'sm' height to 0 to make it disappear
+            height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" }, // Set 'sm' height to 0 to make it disappear
             position: "absolute",
             bottom: "15%", // Corrected spelling to 'bottom' instead of 'buttom'
             left: "5%",
