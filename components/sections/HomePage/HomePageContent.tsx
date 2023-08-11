@@ -9,6 +9,7 @@ import { HomePoints } from "./HomePoints";
 import { HomeHistoricalFacts } from "./HomeHistoricalFacts";
 import { HomeTeam } from "./HomeTeam";
 import { HomeInfo } from "./HomeInfo";
+import { HomeIconButton } from "./HomeIconButton";
 
 export const HomePageContent = () => {
   return (
@@ -28,6 +29,7 @@ export const HomePageContent = () => {
       <FeaturesSection />
       <MainDivider />
       <HomeTeam />
+      <HomeIconButton />
     </Box>
   );
 };

@@ -46,7 +46,13 @@ export const HomeInfo = () => {
         </Typography>
       </Box>
       <Box sx={{ mt: 4 }}>
-        <Typography sx={{ fontSize: {xs: "20px", sm: "25px", md: "48px"}, fontWeight: "medium", textAlign: "center" }}>
+        <Typography
+          sx={{
+            fontSize: { xs: "20px", sm: "25px", md: "48px" },
+            fontWeight: "medium",
+            textAlign: "center",
+          }}
+        >
           ¡Actúa ahora y asegura tu legado para siempre!
         </Typography>
       </Box>
