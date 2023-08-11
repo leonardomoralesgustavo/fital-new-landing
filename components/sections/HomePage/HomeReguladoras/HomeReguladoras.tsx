@@ -12,8 +12,8 @@ export const HomeReguladoras = () => {
     >
       <Box sx={{ display: "flex" }}>
         <Box
-          height={{ xs: "200px", sm: "250px", md: "auto" }}
-          width={{ xs: "150px", sm: "150px", md: "auto" }}
+          height={{ xs: "100px", sm: "150px", md: "200px" }}
+          width={{ xs: "100px", sm: "150px", md: "200px" }}
           component={"img"}
           src="/images/CONDUSEF.png"
           onClick={() =>
@@ -24,8 +24,8 @@ export const HomeReguladoras = () => {
           }
         />
         <Box
-          height={{ xs: "200px", sm: "250px", md: "auto" }}
-          width={{ xs: "150px", sm: "150px", md: "auto" }}
+          height={{ xs: "100px", sm: "150px", md: "200px" }}
+          width={{ xs: "100px", sm: "150px", md: "200px" }}
           component={"img"}
           src="/images/CNBV.png"
           onClick={() =>
