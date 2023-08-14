@@ -57,7 +57,7 @@ export const HomeHeader = () => {
             height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" },
             position: "absolute",
             bottom: "14.5%",
-            left: "16%",
+            left: "14%",
             backgroundImage: "url('/images/zai-foto.png')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "50%",
