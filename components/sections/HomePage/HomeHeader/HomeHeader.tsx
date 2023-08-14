@@ -170,11 +170,11 @@ export const HomeHeader = () => {
               bgcolor: "#EBE8EF",
               borderRadius: 5,
               boxShadow: "0px 2px 4px #0000000F",
-              // width: {xs: "325px", sm: "100%", md:"400px"} ,
+              width: { xs: "90vw", sm: "95vw", md: "450px" },
               mt: { xs: 4, sm: "none" },
               // px: 2,
-              p: { xs: 6, sm: 20, md: 8 },
-              py: { xs: -8, sm: 5, md: 2, lg: 3, xl: 3 },
+              // p: { xs: 6, sm: 20, md: 8 },
+              py: { xs: 4, sm: 5, md: 2, lg: 3, xl: 3 },
               // height: { xs: "550px", md: "600px", lg: "650px", xl: "695px" },
               mr: { xs: 0, sm: 0, md: 2 },
               gap: { xs: 0, sm: 0, md: 4 },
@@ -186,39 +186,48 @@ export const HomeHeader = () => {
               </Typography>
             </Box>
             <Box
-              // width={"100%"}
               onSubmit={handleSubmit}
               component="form"
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{ display: "flex", flexDirection: "column" }}
             >
-              <Typography textAlign={"left"}>Nombre</Typography>
-              <TextField
-                name="name"
-                type="text"
-                sx={{ mt: 1, backgroundColor: "white" }}
-              />
-              <Typography textAlign={"left"}>Apellido</Typography>
-              <TextField
-                name="lastName"
-                type="text"
-                sx={{ mt: 1, backgroundColor: "white" }}
-              />
-              <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
-                Correo
-              </Typography>
-              <TextField
-                name="email"
-                type="text"
-                sx={{ mt: 1, backgroundColor: "white" }}
-              />
-              <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
-                Teléfono
-              </Typography>
-              <TextField
-                name="phone"
-                type="text"
-                sx={{ mt: 1, backgroundColor: "white" }}
-              />
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                width={{ xs: "90%", sm: "90%", md: "80%" }}
+              >
+                <Typography textAlign={"left"}>Nombre</Typography>
+                <TextField
+                  name="name"
+                  type="text"
+                  sx={{ mt: 1, backgroundColor: "white" }}
+                />
+                <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
+                  Apellido
+                </Typography>
+                <TextField
+                  name="lastName"
+                  type="text"
+                  sx={{ mt: 1, backgroundColor: "white" }}
+                />
+                <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
+                  Correo
+                </Typography>
+                <TextField
+                  name="email"
+                  type="text"
+                  sx={{ mt: 1, backgroundColor: "white" }}
+                />
+                <Typography textAlign={"left"} sx={{ mb: 0, mt: 2 }}>
+                  Teléfono
+                </Typography>
+                <TextField
+                  name="phone"
+                  type="text"
+                  sx={{ mt: 1, backgroundColor: "white" }}
+                />
+              </Box>
               <Box display={"flex"} justifyContent={"center"} mt={4}>
                 <Button
                   type="submit"

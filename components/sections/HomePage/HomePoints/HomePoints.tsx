@@ -13,7 +13,7 @@ export const HomePoints = () => {
       <Box
         component={"img"}
         src="/images/GIF-LANDING.gif"
-        width={{ xs: "300px", sm: "400px", md: "500px", lg: "750px" }}
+        width={{ xs: "90%", sm: "400px", md: "500px", lg: "750px" }}
         height={{ xs: "auto", sm: "auto" }}
       />
       <Box
@@ -21,7 +21,7 @@ export const HomePoints = () => {
         flexDirection={"column"}
         gap={{ xs: 5, sm: 5, md: 2 }}
         sx={{
-          width: { xs: "300px", sm: "400px", md: "700px" },
+          width: { xs: "90%", sm: "400px", md: "700px" },
           height: { xs: "auto", sm: "auto", md: "560px" },
           justifyContent: "center",
         }}
