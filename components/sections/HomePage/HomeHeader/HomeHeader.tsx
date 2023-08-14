@@ -77,7 +77,7 @@ export const HomeHeader = () => {
             width: { xs: "85vw", md: "none" },
             height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" },
             position: "absolute",
-            bottom: "12%",
+            bottom: "16%",
             left: "16%",
             backgroundImage: "url('/images/zai-foto.png')",
             backgroundRepeat: "no-repeat",
@@ -149,10 +149,10 @@ export const HomeHeader = () => {
               sx={{
                 bgcolor: "#7600FF",
                 color: "white",
-                py: { xs: 2, sm: 2, md: 4 },
-                px: { xs: 2, sm: 2, md: 4 },
+                py: { xs: 2, sm: 2, md: 3 },
+                px: { xs: 2, sm: 2, md: 2 },
                 borderRadius: 2,
-                fontSize: { xs: "15px", md: "20px", lg: "25px", xl: "28px" },
+                fontSize: { xs: "15px", md: "20px", lg: "24px", xl: "24px" },
               }}
             >
               Agendar asesoria gratuita
@@ -170,7 +170,7 @@ export const HomeHeader = () => {
               bgcolor: "#EBE8EF",
               borderRadius: 5,
               boxShadow: "0px 2px 4px #0000000F",
-              width: { xs: "90vw", sm: "95vw", md: "450px" },
+              width: { xs: "90vw", sm: "95vw", md: "500px" },
               mt: { xs: 4, sm: "none" },
               // px: 2,
               // p: { xs: 6, sm: 20, md: 8 },
@@ -181,7 +181,11 @@ export const HomeHeader = () => {
             }}
           >
             <Box display={"flex"} justifyContent={"center"}>
-              <Typography sx={{ fontSize: "25px" }}>
+              <Typography
+                sx={{
+                  fontSize: { xs: "15px", md: "20px", lg: "24px", xl: "24px" },
+                }}
+              >
                 Agendar asesoría gratuita
               </Typography>
             </Box>
@@ -234,14 +238,14 @@ export const HomeHeader = () => {
                   sx={{
                     bgcolor: "#7600FF",
                     color: "white",
-                    py: { xs: 2, md: 2, lg: 3, xl: 4 },
-                    px: { xs: 2, md: 2, lg: 3, xl: 3 },
+                    py: { xs: 2, sm: 2, md: 3 },
+                    px: { xs: 2, sm: 2, md: 2 },
                     borderRadius: 2,
                     fontSize: {
                       xs: "15px",
                       md: "20px",
-                      lg: "25px",
-                      xl: "28px",
+                      lg: "24px",
+                      xl: "24px",
                     },
                   }}
                 >
