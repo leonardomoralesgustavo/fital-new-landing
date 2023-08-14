@@ -50,34 +50,13 @@ export const HomeHeader = () => {
           gap: { xl: 0, lg: 4, md: 4, sm: 3, xs: 1 },
         }}
       >
-        {/* <Grid
-          sx={{
-            // clipPath: "polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)",
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-            // width: { xs: "auto", md: "100vw" },
-            // height: "73%",
-            width: { xs: "100vw", md: "none" },
-            height: { xs: "73%", sm: "400px", md: "73%" },
-            position: "absolute",
-            buttom: 0,
-            // top: 0,
-            // top: "50%",
-            left: "30%",
-            // middle: 0,
-            // bgcolor: "blue",
-            backgroundImage: "url('/images/zai-foto.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "30%",
-          }}
-        ></Grid> */}
         <Grid
           sx={{
-            // bgcolor: "blue",
             clipPath: "polygon(30% 0, 70% 0, 70% 100%, 30% 100%)",
             width: { xs: "85vw", md: "none" },
             height: { xs: 0, sm: 0, md: 0, lg: 0, xl: "73%" },
             position: "absolute",
-            bottom: "16%",
+            bottom: "15%",
             left: "16%",
             backgroundImage: "url('/images/zai-foto.png')",
             backgroundRepeat: "no-repeat",
